@@ -10,7 +10,7 @@ echo 'hello world'
 }
 stage('stage 2'){
   when {
-    'feature/*'
+   branch 'feature/*'
   }
 steps{
 echo 'only when feature'
